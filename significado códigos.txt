@@ -1,0 +1,16 @@
++	adição
+-	subtração 
+*	multiplicação
+/	divisão
+%	resto da divisão
+
+>	maior que
+>=	maior igual
+<	menor que
+<=	menor igual
+==	igual a
+===	estritamente igual
+!=	diferente
+!	not (negação)
+&&	e (and)
+||	ou (or)
