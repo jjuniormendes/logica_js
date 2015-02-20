@@ -15,14 +15,17 @@
 	function mostra(dado) {
 		document.write(dado);
 	}
-	function calculaIMC(peso, altura) {
+	function calculaIMC() {
+		/*A função prompt captura a entrada de dados do teclado do usuário */
+		var peso = prompt("Informe seu peso")
+		var altura = prompt("Informe sua altura")
 		var IMC = peso / (altura * altura);
 		//Passando para a função mostra exibiro resultado.
 		//Usamos o método round parada classe Math para arredondar um valor.
 		mostra("Seu IMC é: " + Math.round(IMC));
 	}
 	//Chama a função para a realização do cálculo.
-	calculaIMC(51, 1.75);
+	calculaIMC();
 	</script>
 </body>
 </html>
