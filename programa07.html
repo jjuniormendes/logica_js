@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Trabalhando com Funções e Entrada de Dados</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Funções com</h1>
+	<script type="text/javascript">
+	function pulalinha () {
+		//Corpo da função, bloco de código que realiza uma tarefa.
+		document.write("<br>")
+	}
+	//Cria uma função que recebe um parâmetro e exibe uma mensagem.
+	function mostra(dado) {
+		document.write(dado);
+	}
+	function calculaIMC(peso, altura) {
+		var IMC = peso / (altura * altura);
+		//Passando para a função mostra exibiro resultado.
+		//Usamos o método round parada classe Math para arredondar um valor.
+		mostra("Seu IMC é: " + Math.round(IMC));
+	}
+	//Chama a função para a realização do cálculo.
+	calculaIMC(51, 1.75);
+	</script>
+</body>
+</html>
