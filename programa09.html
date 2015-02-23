@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Estrutura de Controle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Entendendo de IF</h1>
+	<script>
+	function calculaIMC() {
+		/*A função prompt captura a entrada de dados do teclado do usuário */
+		//A função parseInt converte uma string para inteiro.
+		var peso = parseInt(prompt("Informe seu peso:"));
+		var altura = parseFloat(prompt("Informe sua altura:"));
+		var IMC = peso / (altura * altura);
+
+		if (IMC < 18) {
+		document.write("Seu IMC é:" + IMC + "<br>");
+		document.write("Cuidado, seu status é de: Magreza!");
+		} else if (IMC > 18 && IMC <= 25) {
+			document.write("Seu IMC é:" + IMC + "<br>");
+			document.write("Normal")
+		}
+		  else if (IMC > 25 && IMC <= 30) {
+			document.write("Seu IMC é:" + IMC + "<br>");
+			document.write("Sobrepeso")
+		} else if (IMC > 30 && IMC <= 35) {
+			document.write("Seu IMC é:" + IMC + "<br>");
+			document.write("Obesidade Grau I")
+		} else if (IMC > 35 && IMC <= 40) {
+			document.write("Seu IMC é:" + IMC + "<br>");
+			document.write("Obesidade Grau II")
+		} else {
+			document.write("Seu IMC é:" + IMC + "<br>");
+			document.write("Cuidado, você está com Obesidade Mórbida")
+		}
+	}
+	//Chama a função para a realização do cálculo.
+	calculaIMC();
+	
+	</script>
+<body>
+</html>
