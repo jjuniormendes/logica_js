@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Estrutura de Controle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Entendendo o FOR</h1>
+	<script>
+		//Declaração de Array (ordem) de frutas.
+		frutas = ["Pera", "Uva", "Maçã", "Salada Mista"]
+		/* o Laço FOR serve para fazermos interações em coleções*/
+		for (var i = 0; i < frutas.length; i++) {
+			document.write("Eu gosto de: " + frutas[i] + "<br>");
+		}
+
+		//Tabuada com FOR
+		for(var n = 1; n <= 10; n++) {
+			document.write(n * 9 + "<br>")
+		}
+
+		var n = 1
+		while(n <= 10) {
+			document.write(n + "<br>")
+			n = n + 1;
+		}
+	</script>
+<body>
+</html>
