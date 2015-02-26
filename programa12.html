@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<h1>Entendendo o WHILE</h1>
+	<h1>Exibindo números de 0 a 100</h1>
 	<script>
 	//Declarações de variáveis que servem de controle para o While.
+		/*
 		var valor = 0; //Valor inicial, que será diferente a cada interação.
 		//var incremento = 0.5;
 		//var maximo = 100; //Usado como controle.
@@ -19,14 +20,24 @@
 		//Quando o While retornar False, imprimirá na tela o numero em valor.
 			document.write(valor);
 		// 100
+*/
 
-
-		/* CONTAGEM DE 0 100
+	//	 CONTAGEM DE 0 100
 		var i = -1
 		while ( i < 100) {
 			i = i + 1
 			document.write(i + "<br>");
-		}*/
+		}
+	</script>
+ 	<h1>Exibindo números pares entre 0 e 100</h1>
+	<script type="text/javascript">
+		var i = 0
+		for(i <= 100) {
+			if(i%2 == 0) {
+				i = i + 1
+			}
+		}
+		document.write(i + "<br>");
 	</script>
 <body>
 </html>
